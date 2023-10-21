@@ -1,0 +1,108 @@
+<!--Used ! boiler plate-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Pulls in bootstrap-->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Jake's Cookie Emporium</title>
+</head>
+<!--Setting the background color for the page-->
+<body class="bg-primary">
+    <!--Start Header-->
+    <!--Create a space for the header and have it be a different color than the rest of the page, added sticky-top so it is always on the top of the page even if you scroll-->
+  <div class="container-fluid bg-info sticky-top">
+    <!--First row of the grid for my Page Title-->
+    <div class="row">
+      <!--First Column, margin of top and bottom of 5-->
+      <div class="col my-5">
+        <!--Set the text as white and centered-->
+        <h1 class="text-center text-white">Jake's Cookie Emporium</h1>
+      </div>
+    </div>
+    <!--Start the row for my nav bar-->
+    <div class="row">
+      <div class="col">
+        <!--adds responsiveness and match the background color from the header-->
+        <nav class="navbar navbar-expand-sm bg-info">
+          <div class="container-fluid">
+            <!--swaps the nav bar for a hamburger bar, couldn't figure out how to get to align right when the button appears-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <!--added an underline to the active page and updated the text to white-->
+                  <a class="nav-link active border-bottom text-white" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <!--made the text white as well-->
+                  <a class="nav-link text-white" href="Contact.html">Contact Us</a>
+                </li>
+              </ul>
+              <!--Search doesn't function, intentionally-->
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-light" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div> 
+  <!--End Header-->
+  
+  <!--Start Content-->
+  <!--Create a new container for our page content, adding a top margin of 5 to create some separation-->
+  <div class="container-fluid mt-5">
+    <!--Start of content row-->
+    <div class="row">
+      <!--Created responsive columns, image will slide under text when screen resolution falls below 992px-->
+      <div class="text-bg-primary col-lg">
+        <!--Brief description of the totally real(not real) Cookie Emporium, I'm a professional eater of cookies not baker of them-->
+        <h2>About Jake's Cookie Emporium</h2>
+        <p>Established in 2019, Jake's Cookie Emporium has been baking their way to our hearts, as well as our stomachs. 
+          From traditional chocolate chips to <em>holiday</em> themed sweet-treats, Jake's has got you covered.</p>
+        <!--Link doesn't function, intentionally-->
+        <p>To snag yours today, click <a href="#" class="link-light link-offset-2 link-underline-opacity-25 
+          link-underline-opacity-100-hover">here</a>.</p>
+      </div>
+      <!--Created responsive columns, image will slide under text when screen resolution falls below 992px-->
+      <div class="text-bg-primary col-lg">
+        <!--Created a contianer within a containter, container-ception, to try and format the pictures into equal squares-->
+        <div class="container-fluid">
+          <div class="row mb-4">
+            <div class="col">
+              <img src="images/choc-chip.jpg" class="img-fluid" alt="A picture of chocolate chip cookies">
+            </div>
+            <div class="col">
+              <img src="images/sug-sprinkle.jpg" class="img-fluid" alt="Sugar Cookies with Sprinkles">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="images/halloween-cookie.jpg" class="img-fluid" alt="Halloween Themed Cookies">
+            </div>
+            <div class="col">
+              <img src="images/cookie-generic.jpg" class="img-fluid" alt="A picture of chocolate chip cookies">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!--End Content-->
+
+
+
+
+  <!--associated scripts for bootstrap, may not need jquery but to be safe-->
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
